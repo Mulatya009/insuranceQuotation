@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>insurance | quotation</title>
+    <!--bootsrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+ 
+</head>
+<body>
+    <div class="container-fluid mt-1">
+        <!-- header -->
+        <header class="text-center text-white bg-info p-1">
+            <h5>Insurance Quotation</h5>
+        </header>
+
+        <!-- input form -->
+        <div class="jumbotron w-75 mt-4 py-3 mb-3">
+            <div class="container-fluid w-75 m-auto">
+                <form class="forms mt-2" id="form">
+                    <div class="form-group">
+                        <label for="Type"><b>Type:</b></label>
+                        <select name="period" class="form-control" id="type">
+                            <option value="">--Select--</option>
+                            <option value="1">Motor cycles</option>
+                            <option value="2">Motor cars</option>
+                            <option value="3">Motor omnibuses</option>                            
+                            <option value="4">Heavy commercial</option>
+                            <option value="5">Tractors</option>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="population"><b>Year:</b></label>
+                        <select class="form-control" id="years"></select>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-legend col-12">Level:</legend>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="level" value="Basic" checked>
+                                        Basic
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="radio" class="form-check-input" name="level" value="Comprehensive">
+                                        Comprehensive
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="loading" class="text-center">
+                        <img src="gif/loaders/loader1.webp" alt="">
+                    </div>
+                    
+                    <div id="results"></div>
+                    
+                    <div class="form-group text-right">
+                        <input type="submit"class="btn btn-info btn-block" value="Get Quotation"> 
+                    </div>  
+                </form>
+            </div> 
+        </div>
+    </div>
+
+
+    <!--js-->
+    <script src="js/classes.js"></script>
+    
+    
+</body>
+</html>
